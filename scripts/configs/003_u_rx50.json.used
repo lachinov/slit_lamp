@@ -1,0 +1,24 @@
+{
+  "batchSize": 8,
+  "virtualBatchSize": 1,
+  "nEpochs": 60,
+  "threads": 8,
+  "train_path": "../eye_train",
+  "split_path": "../splits",
+  "models_path": "../models",
+  "split": ["0.json","1.json","2.json","3.json","4.json"],
+  "name": "test",
+  "gpus": 1,
+
+  "code_path": "003",
+
+  "model_kwargs":
+  {
+    "arch":"unet",
+    "encoder_name":"resnext50_32x4d",
+    "encoder_weights":"imagenet",
+    "in_channels":3,
+    "out_classes":1
+  }
+
+}

@@ -1,0 +1,28 @@
+{
+  "batchSize": 8,
+  "virtualBatchSize": 1,
+  "nEpochs": 100,
+  "threads": 4,
+  "train_path": "../eye_train",
+  "epoch_size": 2048,
+  "split_path": "../splits",
+  "models_path": "../models",
+  "split": ["1.json"],
+  "name": "test",
+  "gpus": 1,
+
+  "code_path": "007",
+
+  "model_kwargs":
+  {
+    "arch":"unet",
+    "encoder_name":"efficientnet-b4",
+    "encoder_weights":"imagenet",
+    "in_channels":3,
+    "out_classes":1,
+    "decoder_attention_type": "scse",
+    "encoder_depth": 4,
+    "decoder_channels": [256, 128, 64, 32]
+  }
+
+}

@@ -1,0 +1,11 @@
+tmp/
+.ipynb_checkpoints
+.idea
+__pycache__
+models/*
+eye_train/*
+eye_test/*
+*.zip
+__MACOSX
+*.pdf
+viz_train
